@@ -1,0 +1,175 @@
+/* Reset profissional */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Urbanist', sans-serif;
+    background-color: #f8f9fa;
+    background-image: url("../images/Background_Fintech.png");
+    background-size: 100%;        /* Ajusta ao tamanho da tela */
+    background-position: center;   /* Centraliza a imagem */
+    background-repeat: no-repeat;  /* Não repete */
+    background-attachment: fixed;  /* Fica fixa ao rolar a página */
+
+
+}
+
+/* ================= Cabeçalho ================= */
+
+.meu-header {
+    background-color: #ffffff00;
+    height: 80px;
+    padding: 0 40px;
+    border-bottom: 1px solid #ddd;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    height: 35px;
+}
+
+.titulo-dashboard {
+    background-color: #f7f7f7;
+    color: rgb(31, 10, 223);
+    font-weight: 600;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+
+.menu-config a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* ================= SALDO ================= */
+
+.container-saldo {
+    max-width: 1200px;
+    margin: 30px auto 0 auto;
+    padding: 0 40px;
+}
+
+.box-saldo {
+    background-color: #3dd67828;
+    border: 1px solid #cce5ff;
+    color: #004085;
+    padding: 20px;
+    border-radius: 12px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+}
+
+.box-saldo strong {
+    font-size: 24px;
+    margin-left: 10px;
+    font-weight: 800;
+}
+
+/* ================= DASHBOARD ================= */
+
+.linha-dashboard {
+    max-width: 1200px;
+    margin: 70px auto;
+    padding: 0 40px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+/* Classe base profissional para todos os cards */
+.card {
+    flex: 1;
+    background-color: white;
+    border-radius: 12px;
+    padding: 24px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+    min-width: 250px;
+}
+
+.card h3 {
+    margin: 0 0 20px 0;
+    color: #007bff;
+    font-size: 18px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    padding: 12px 0;
+    border-bottom: 1px solid #f0f0f0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    color: #555;
+    align-items: center;
+}
+
+/* Valores positivos e negativos */
+
+.valor-pos {
+    color: #27ae60;
+    font-weight: bold;
+}
+
+.valor-neg {
+    color: #e74c3c;
+    font-weight: bold;
+}
+
+.moeda-flag {
+    font-size: 20px;
+    margin-right: 5px;
+}
+
+/* ================= RODAPÉ ================= */
+
+.rodape {
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    background-color: #f2f2f2;
+    font-size: 14px;
+    color: #555;
+    margin-top: 40px;
+}
+
+/* ================= RESPONSIVO ================= */
+
+@media (max-width: 768px) {
+    .linha-dashboard {
+        flex-direction: column;
+        padding: 0 16px;
+    }
+
+    .container-saldo {
+        padding: 0 16px;
+    }
+
+    .meu-header {
+        padding: 0 16px;
+    }
+
+    .titulo-dashboard,
+    .menu-config a {
+        font-size: 16px;
+    }
+}
